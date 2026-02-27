@@ -3,7 +3,7 @@ version: "3.8"
 services:
   wordpress:
     image: wordpress:latest
-    container_name: favorite-food-wordpress
+    container_name: favoritefood-wordpress
     restart: always
     ports:
       - "3680:80"
@@ -17,7 +17,7 @@ services:
 
   db:
     image: mariadb:10.6
-    container_name: favorite-food-db
+    container_name: favoritefood-db
     restart: always
     env_file: .env
     ports:
