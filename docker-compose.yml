@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  wordpress:
+  favoritefood:
     image: wordpress:latest
     container_name: favoritefood-wordpress
     restart: always
@@ -13,9 +13,9 @@ services:
     networks:
       - sigma-net
     depends_on:
-      - db
+      - favoritefood-db
 
-  db:
+  favoritefood-db:
     image: mariadb:10.6
     container_name: favoritefood-db
     restart: always
