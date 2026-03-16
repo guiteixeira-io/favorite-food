@@ -1,7 +1,8 @@
 
 services:
   favoritefood:
-    image: wordpress:latest
+    image: favoritefood-wordpress
+    build: .
     container_name: favoritefood-wordpress
     restart: always
     ports:
